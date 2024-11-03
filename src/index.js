@@ -5,9 +5,9 @@ function randint(min, max) {
 } 
 
 let xp = randint(1, 13000);
-const classificacao = ('O herói ' + hero + ' está no nível de ')
+const classificacao = (`O herói ${hero} está no nível  `)
 
-switch(true) {
+switch (true) {
     case xp <= 1000:
     console.log(classificacao + "Ferro")
     break
