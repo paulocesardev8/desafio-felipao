@@ -1,7 +1,3 @@
-Segue um `README.md` bem estruturado, profissional e pronto para GitHub, explicando seus dois scripts:
-
----
-
 # 🧠 Sistema de Classificação de Heróis (JavaScript)
 
 Este repositório contém dois scripts em JavaScript que simulam sistemas de classificação de heróis com base em:
@@ -159,7 +155,3 @@ node nome-do-arquivo.js
 * Geração de números aleatórios
 * Interpolação de strings (template literals)
 * Lógica de classificação baseada em regras
-
----
-
-Se quiser, posso evoluir isso aqui para um projeto completo (com interface web + deploy + portfólio pra vaga).
