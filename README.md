@@ -1,26 +1,40 @@
-🧠 Sistema de Classificação de Heróis (JavaScript)
+Segue um `README.md` bem estruturado, profissional e pronto para GitHub, explicando seus dois scripts:
+
+---
+
+# 🧠 Sistema de Classificação de Heróis (JavaScript)
 
 Este repositório contém dois scripts em JavaScript que simulam sistemas de classificação de heróis com base em:
 
-🏆 Número de vitórias e derrotas
-⚡ Pontos de experiência (XP)
-📌 1. Classificação por Vitórias
-📖 Descrição
+* 🏆 Número de vitórias e derrotas
+* ⚡ Pontos de experiência (XP)
 
-A função calcularRank recebe o número de vitórias e derrotas de um herói e:
+---
 
-Calcula o saldo de vitórias
-Define o nível do herói com base nas vitórias
-🧮 Lógica de Classificação
-Vitórias	Nível
-< 10	Ferro
-11 – 20	Bronze
-21 – 50	Prata
-51 – 80	Ouro
-81 – 90	Diamante
-91 – 100	Lendário
-≥ 101	Imortal
-💻 Código
+## 📌 1. Classificação por Vitórias
+
+### 📖 Descrição
+
+A função `calcularRank` recebe o número de vitórias e derrotas de um herói e:
+
+* Calcula o saldo de vitórias
+* Define o nível do herói com base nas vitórias
+
+### 🧮 Lógica de Classificação
+
+| Vitórias | Nível    |
+| -------- | -------- |
+| < 10     | Ferro    |
+| 11 – 20  | Bronze   |
+| 21 – 50  | Prata    |
+| 51 – 80  | Ouro     |
+| 81 – 90  | Diamante |
+| 91 – 100 | Lendário |
+| ≥ 101    | Imortal  |
+
+### 💻 Código
+
+```javascript
 function calcularRank(vitorias, derrotas) { 
     let saldoVitorias = vitorias - derrotas;
     let nivel = " ";
@@ -48,23 +62,34 @@ function calcularRank(vitorias, derrotas) {
 let vitorias = 25;
 let derrotas = 10;
 console.log(calcularRank(vitorias, derrotas));
-⚡ 2. Classificação por XP (Experiência)
-📖 Descrição
+```
+
+---
+
+## ⚡ 2. Classificação por XP (Experiência)
+
+### 📖 Descrição
 
 Este script:
 
-Gera um valor aleatório de XP
-Classifica o herói com base nesse valor
-🎯 Lógica de Classificação
-XP	Nível
-≤ 1000	Ferro
-≤ 2000	Bronze
-≤ 5000	Prata
-≤ 8000	Ouro
-≤ 9000	Ascendente
-≤ 10000	Imortal
-≤ 10001	Radiante
-💻 Código
+* Gera um valor aleatório de XP
+* Classifica o herói com base nesse valor
+
+### 🎯 Lógica de Classificação
+
+| XP      | Nível      |
+| ------- | ---------- |
+| ≤ 1000  | Ferro      |
+| ≤ 2000  | Bronze     |
+| ≤ 5000  | Prata      |
+| ≤ 8000  | Ouro       |
+| ≤ 9000  | Ascendente |
+| ≤ 10000 | Imortal    |
+| ≤ 10001 | Radiante   |
+
+### 💻 Código
+
+```javascript
 const hero = "nego brutus"
 
 function randint(min, max) {
@@ -103,18 +128,38 @@ switch (true) {
         console.log(classificacao + "Radiante")
         break
 }
-🚀 Como Executar
-Instale o Node.js (se ainda não tiver)
-Salve os arquivos .js
-Execute no terminal:
+```
+
+---
+
+## 🚀 Como Executar
+
+1. Instale o Node.js (se ainda não tiver)
+2. Salve os arquivos `.js`
+3. Execute no terminal:
+
+```bash
 node nome-do-arquivo.js
-🧩 Melhorias Futuras
- Transformar em API (Node + Express)
- Criar interface web (HTML/CSS/JS)
- Persistência de dados (banco de dados)
- Testes automatizados
-📌 Observações Técnicas
-Uso de estruturas condicionais (if/else e switch)
-Geração de números aleatórios
-Interpolação de strings (template literals)
-Lógica de classificação baseada em regras
+```
+
+---
+
+## 🧩 Melhorias Futuras
+
+* [ ] Transformar em API (Node + Express)
+* [ ] Criar interface web (HTML/CSS/JS)
+* [ ] Persistência de dados (banco de dados)
+* [ ] Testes automatizados
+
+---
+
+## 📌 Observações Técnicas
+
+* Uso de estruturas condicionais (`if/else` e `switch`)
+* Geração de números aleatórios
+* Interpolação de strings (template literals)
+* Lógica de classificação baseada em regras
+
+---
+
+Se quiser, posso evoluir isso aqui para um projeto completo (com interface web + deploy + portfólio pra vaga).
